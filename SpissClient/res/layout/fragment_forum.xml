@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_plate"
+            style="@style/forum_tab_rb_style"
+            android:checked="true"
+            android:text="板块" />
+
+        <RadioButton
+            android:id="@+id/rb_newest"
+            style="@style/forum_tab_rb_style"
+            android:layout_marginLeft="3dp"
+            android:text="最新" />
+
+        <RadioButton
+            android:id="@+id/rb_recommend"
+            style="@style/forum_tab_rb_style"
+            android:layout_marginLeft="3dp"
+            android:text="推荐" />
+    </RadioGroup>
+    
+    <ListView android:id="@android:id/list"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:dividerHeight="1px"></ListView>
+
+</LinearLayout>

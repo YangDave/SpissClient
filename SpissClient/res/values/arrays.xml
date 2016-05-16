@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ligarray">
+        <item>一级</item>
+        <item>二级</item>
+        <item>三级</item>
+    </string-array>
+    <string-array name="seiarray">
+        <item>一级</item>
+        <item>二级</item>
+        <item>三级</item>
+        <item>四级</item>
+        <item>五级</item>
+        <item>六级</item>
+        <item>七级</item>
+    </string-array>
+    <string-array name="volarray">
+        <item>静音</item>
+        <item>低</item>
+        <item>中</item>
+        <item>高</item>
+    </string-array>
+
+</resources>

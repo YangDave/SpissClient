@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    tools:context="com.uestc.acceleromenter.MainActivity" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="地震与火灾预警配置"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView 
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="20dp"
+        android:text="地震预警:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title1"
+        android:layout_marginTop="15dp"
+        android:text="火灾预警:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title2"
+        android:layout_marginTop="15dp"
+        android:text="地震报警级别:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/title4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title3"
+        android:layout_marginTop="15dp"
+        android:text="火灾报警级别:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/title5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title4"
+        android:layout_marginTop="15dp"
+        android:text="报警音量:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Switch
+        android:id="@+id/switcher1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="20dp"
+        android:checked="true"
+        android:textOff="关闭"
+        android:textOn="开启" />
+
+    <Switch
+        android:id="@+id/switcher2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title1"
+        android:layout_marginTop="15dp"
+        android:checked="true"
+        android:textOff="关闭"
+        android:textOn="开启" />
+
+    <Spinner
+        android:id="@+id/seismsp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/title4"
+        android:layout_alignLeft="@+id/switcher2"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/title3"
+        android:entries="@array/seiarray" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/lightsp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/title5"
+        android:layout_alignLeft="@+id/seismsp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/title4"
+        android:entries="@array/ligarray" />
+
+    <Spinner
+        android:id="@+id/volumesp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/title5"
+        android:layout_alignLeft="@+id/lightsp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/title5"
+        android:entries="@array/volarray" />
+
+</RelativeLayout>

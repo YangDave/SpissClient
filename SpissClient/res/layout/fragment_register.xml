@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+    
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:hint="用户名" />
+        
+           <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/username"
+            android:layout_alignLeft="@id/username"
+            android:layout_alignTop="@id/username"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/user" />
+    </RelativeLayout>
+    
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:hint="邮箱" />
+        
+           <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/email"
+            android:layout_alignLeft="@id/email"
+            android:layout_alignTop="@id/email"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/email" />
+    </RelativeLayout>
+
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/password"
+            android:layout_alignLeft="@id/password"
+            android:layout_alignTop="@id/password"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/pass" />
+
+        <CheckBox
+            android:id="@+id/passcb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/password"
+            android:layout_alignRight="@id/password"
+            android:checked="false" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/to_login"
+            style="@style/login_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="已有帐号？请登录" />
+    </RelativeLayout>
+
+</LinearLayout>
